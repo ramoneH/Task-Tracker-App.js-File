@@ -7,7 +7,6 @@ router.post('/addtask', function(req, res) {
     // Get our form values. These rely on the "name" attributes
     var taskName = req.body.taskname;
     var taskDesc = req.body.taskdesc;
-    var 
 
     // Set our collection
     var collection = db.get('usercollection');
