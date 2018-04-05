@@ -14,8 +14,8 @@ router.post('/addtask', function(req, res) {
 
     // Submit to the DB
     collection.insert({
-        "task" : userName,
-        "desc" : userEmail,
+        "task" : taskName,
+        "desc" : taskDesc,
     }, function (err, doc) {
         if (err) {
             // If it failed, return error
